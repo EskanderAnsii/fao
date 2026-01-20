@@ -69,8 +69,8 @@ pip3 install --user flask
 ### 1. Clone and Setup
 
 ```bash
-# Clone this repository
-git clone https://github.com/EskanderAnsii/fao.git
+# Clone this setup repository (adjust URL to your fork/repository)
+git clone https://github.com/<YOUR_USERNAME>/fao.git
 cd fao
 
 # Run the setup script
@@ -103,8 +103,8 @@ This will:
 # Navigate to your workspace
 cd ~/workspace  # or your preferred directory
 
-# Clone this repository
-git clone https://github.com/EskanderAnsii/fao.git
+# Clone this setup repository (adjust URL to your fork/repository)
+git clone https://github.com/<YOUR_USERNAME>/fao.git
 cd fao
 ```
 
