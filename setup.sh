@@ -16,8 +16,10 @@ else
 fi
 
 echo "Initializing submodules..."
-cd OpenAMR
-git submodule update --init --recursive
+(
+    cd OpenAMR
+    git submodule update --init --recursive
+)
 
 echo ""
 echo "======================================"

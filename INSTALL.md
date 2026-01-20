@@ -61,7 +61,7 @@ source ~/.bashrc
 sudo apt-get install -y python3 python3-pip
 
 # Flask for the UI backend
-pip3 install flask
+pip3 install --user flask
 ```
 
 ## Quick Start
@@ -199,8 +199,10 @@ sudo apt-get install -y ros-noetic-amcl
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws/src
 
-# Link or copy the OpenAMR UI package
-ln -s ~/workspace/fao/OpenAMR/docs/software/ROS/OpenAMR_UI_package/ui_package ./
+# Link the OpenAMR UI package (adjust path as needed)
+# If you cloned to a different location, update the path accordingly
+FAO_PATH="$(cd ../.. && pwd)"  # Gets the absolute path to fao directory
+ln -s "$FAO_PATH/OpenAMR/docs/software/ROS/OpenAMR_UI_package/ui_package" ./
 
 # Build the workspace
 cd ~/catkin_ws
